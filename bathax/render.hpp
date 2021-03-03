@@ -1,7 +1,6 @@
 #pragma once
 
 #include <d3d9.h>
-#include <memory>
 #include <string_view>
 
 #include "imgui/imgui.h" // ImVec2
