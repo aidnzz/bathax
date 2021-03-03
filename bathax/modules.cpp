@@ -16,8 +16,8 @@ auto modules::esp() noexcept -> void
     {
         const auto list = std::span{*begin, count};
         const auto is_alive = std::mem_fn(&lego::Entity::health);
-
-        for (const auto& e : list | std::views::drop(2) | std::views::filter(is_alive))
+        
+        for (const auto& e : list | std::views::filter(is_alive))
             continue;
     }
 }
