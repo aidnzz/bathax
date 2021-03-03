@@ -23,7 +23,7 @@ namespace lego {
 
 	struct alignas(4) Entity
 	{
-		Entity* const self;
+	    Entity* const self;
 		const padding_t<0x50> _;
 		stats_t* const stats;
 		const padding_t<0x4> _1;
