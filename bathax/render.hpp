@@ -65,8 +65,9 @@ namespace render {
         bool m_status;
     };
 
-    auto initialise(HWND hwnd, const LPDIRECT3DDEVICE9 device) noexcept -> void;
     auto draw_box(const ImVec2& pos, const ImVec2& dimensions, const ImColor& colour) noexcept -> void;
     auto draw_line(const ImVec2& from, const ImVec2& to, const ImColor& color, float thickness = 1.0f) noexcept -> void;
     auto draw_text(const ImVec2& pos, const ImColor& colour, const std::string_view text) noexcept -> void;
+    
+    auto initialise(HWND hwnd, const LPDIRECT3DDEVICE9 device) noexcept -> void;
 }
