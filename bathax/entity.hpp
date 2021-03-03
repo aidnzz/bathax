@@ -7,7 +7,7 @@ template<size_t I>
 using padding_t = std::array<std::byte, I>;
 
 namespace lego {
-    constexpr uintptr_t HEROES = 2;
+    constexpr uintptr_t HERO_COUNT = 2;
 
     struct alignas(4) fields_t
     {
