@@ -5,7 +5,8 @@
 
 #include "imgui/imgui.h" // ImVec2
 
-namespace render {
+namespace render 
+{
     class IScreen
     {
     public:
