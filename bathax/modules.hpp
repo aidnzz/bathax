@@ -1,5 +1,6 @@
 #pragma once
 
-namespace modules {
+namespace modules 
+{
     auto esp() noexcept -> void;
 }
