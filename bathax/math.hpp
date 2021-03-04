@@ -4,24 +4,14 @@
 #include <array>
 #include <cassert>
 
-namespace math {
+namespace math 
+{
     template<typename T>
         requires std::is_arithmetic_v<T>
     struct Vector3
     {
         constexpr Vector3(const T x, const T y, const T z) noexcept
             : x(x), y(y), z(z) {}
-
-        [[nodiscard]] constexpr auto operator[](const size_t index) const noexcept -> T
-        {
-            return (*this)[index];
-        }
-
-        [[nodiscard]] constexpr auto operator[](const size_t index) noexcept -> T&
-        {
-            assert(index <= 2); // Rarely function used so cost is negligible
-            return index == 0 ? x : index == 1 ? y : z;
-        }
 
         [[nodiscard("Length is an expensive function")]] constexpr auto length() const noexcept -> T
         {
