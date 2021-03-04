@@ -4,7 +4,8 @@
 #include "config.hpp"
 #include "memory.hpp"
 
-namespace render {
+namespace render 
+{
     auto Menu::begin() const noexcept -> bool
     {
         return ImGui::Begin("Lego mod: by aidn", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoSavedSettings);
