@@ -5,7 +5,8 @@
 #include "imgui/imgui_impl_dx9.h"
 #include "imgui/imgui_impl_win32.h"
 
-namespace render {
+namespace render 
+{
     auto Frame::begin() const noexcept -> bool
     {
         ImGui_ImplDX9_NewFrame();
