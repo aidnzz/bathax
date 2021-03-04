@@ -4,7 +4,8 @@
 #include "imgui/imgui_impl_dx9.h"
 #include "imgui/imgui_impl_win32.h"
 
-namespace render {
+namespace render 
+{
     auto IDrawable::end() const noexcept -> void
     {
         ImGui::End();
