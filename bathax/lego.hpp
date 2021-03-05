@@ -7,7 +7,7 @@ namespace lego
 {
     namespace offsets 
     {
-        // Array two hero entity object pointers. This array is 8 bytes in size containing pointers to the entity objects and may contain null pointers.
+        // Array of two hero entity object pointers. This array is 8 bytes in size containing pointers to the entity objects and may contain null pointers.
         // When hero is swapped the pointers will swap
         constexpr uintptr_t heroes = 0x00ab2960;
         // Pointer to d3d9 device
